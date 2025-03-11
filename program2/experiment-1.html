@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid display</title>
+</head>
+<style>
+    *{
+        margin: 1px;
+        padding: 10px;
+    }
+    .container
+    {
+        display: grid;
+        padding: 10px;
+        gap: 10px;
+        
+        height: 100vh;
+        grid-template-columns:25% 25% 25% 25%;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+    .Header{
+        background-color: brown;
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    .Smallbox1{
+        background-color: yellow;
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    .Smallbox2{
+        background-color: rgb(241, 17, 55);
+        grid-column: 2/5;
+        grid-row: 2/3;
+    }
+    .Smallbox3{
+        background-color: blue;
+        grid-column: 3/5;
+        grid-row: 2/3;
+    }
+    .maincontent{
+        background-color: pink;
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+    .Footer{
+        background-color: blue;
+        grid-column: 1/5;
+        grid-row: 4/5;
+    }
+    .Sidebar{
+        background-color: rgb(178, 207, 178);
+        grid-column: 4/5;
+        grid-row: 2/4;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="Header"> header </div>
+        <div class="Smallbox1"> smallbox1</div>
+        <div class="Smallbox2"> smallbox2 </div>
+        <div class="Smallbox3"> smallbox3 </div>
+        <div class="maincontent"> maincontent </div>
+        <div class="Footer"> footer</div>
+        <div class="Sidebar"> sidebar</div>
+    </div>
+</body>
+</html>
